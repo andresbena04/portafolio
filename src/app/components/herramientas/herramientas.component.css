@@ -1,0 +1,11 @@
+.bg-color{
+  background-color: #91BBC1;
+}
+.icon {
+  width: 3rem;
+}
+.icon:hover {
+  transform: scale(1.2);
+}
+
+
