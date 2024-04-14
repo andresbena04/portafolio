@@ -5,3 +5,44 @@
     --text-color: #2F3E44;  
   }
   
+  .nav-link {
+    text-align: center;
+    position: relative;
+    margin-bottom: .5rem;
+    width: 7rem;
+    overflow: hidden;
+}
+
+.nav-link::before,
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #6a50ff;
+    transition: width 0.5s ease;
+}
+
+.nav-link::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-link::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+    width: 95%;
+}
+
+.nav-link:hover::before {
+    transition-delay: 0.1s; /* Ajusta el retraso para que la animación comience desde el centro */
+}
+
+.active{
+  color: white;
+}
