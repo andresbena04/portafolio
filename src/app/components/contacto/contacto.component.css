@@ -25,6 +25,7 @@
   opacity: 0;
   visibility: hidden;
   font-size: 14px;
+  font-family: "Amaranth", sans-serif;
   transition: all 0.3s ease;
 }
 .icons-container .icon-content:hover .tooltip {
@@ -55,6 +56,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Amaranth", sans-serif;
   }
   
   .button-wrapper,.text,.icon {

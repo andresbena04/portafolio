@@ -2,6 +2,17 @@
   background-color: #5682b1 !important;
   color: #2f3e44;
 }
-#glasses{
-    fill:#C3002F
+
+.font{
+  font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.info{
+  font-family: "Asap", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }

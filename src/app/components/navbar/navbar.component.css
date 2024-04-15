@@ -1,47 +1,50 @@
 :root {
-    --primary-color: #91BBC1;
-    --secondary-color: #5682B1;
-    --neutro-color: #DED7C9;
-    --text-color: #2F3E44;  
-  }
-  
-  .nav-link {
-    position: relative;
-    margin-bottom: .5rem;
-    width: 7rem;
-    overflow: hidden;
+  --primary-color: #91bbc1;
+  --secondary-color: #5682b1;
+  --neutro-color: #ded7c9;
+  --text-color: #2f3e44;
+}
+.text {
+  font-family: "Amaranth", sans-serif;
+  font-size: 400;
+}
+.nav-link {
+  position: relative;
+  margin-bottom: 0.5rem;
+  width: 7rem;
+  overflow: hidden;
 }
 
 .nav-link::before,
 .nav-link::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 0%;
-    height: 3px;
-    background-color: #6a50ff;
-    transition: width 0.5s ease;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #6a50ff;
+  transition: width 0.5s ease;
 }
 
 .nav-link::before {
-    left: 50%;
-    transform: translateX(-50%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-link::after {
-    right: 50%;
-    transform: translateX(50%);
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .nav-link:hover::before,
 .nav-link:hover::after {
-    width: 95%;
+  width: 95%;
 }
 
 .nav-link:hover::before {
-    transition-delay: 0.1s; /* Ajusta el retraso para que la animación comience desde el centro */
+  transition-delay: 0.1s; /* Ajusta el retraso para que la animación comience desde el centro */
 }
 
-.active{
+.active {
   color: white;
 }

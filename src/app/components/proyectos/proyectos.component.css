@@ -2,18 +2,29 @@
   background-color: #5682b1 !important;
   color: #2f3e44;
 }
+.font{
+  font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.card{
+  cursor: pointer;
+}
 .card-img-top {
   height: 15rem;
 }
 .card-img-overlay {
   visibility: hidden;
 }
+.badge-outline {
+  border: 2px solid #5682B1; 
+  color: #2F3E44;
+  background-color: transparent;
+}
 .card:hover {
-  cursor: pointer;
   -webkit-animation: shadow-pop-bl 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
   animation: shadow-pop-bl 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
-
 
 @-webkit-keyframes shadow-pop-bl {
   0% {
@@ -57,7 +68,7 @@
 }
 
 .card:hover .card-img-top {
-  filter: blur(4px);
+  filter: blur(10px);
 }
 
 .card:hover .card-img-overlay {
