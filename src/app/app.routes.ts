@@ -5,6 +5,6 @@ import { HerramientasComponent } from './components/herramientas/herramientas.co
 
 export const routes: Routes = [
     { path: 'perfil', component: PerfilComponent },
-    { path: 'lenguajes', component: HerramientasComponent },
+    { path: 'herramientas', component: HerramientasComponent },
     { path: 'proyectos', component: ProyectosComponent }
 ];

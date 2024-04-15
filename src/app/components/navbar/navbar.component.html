@@ -8,15 +8,15 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" aria-current="page" (click)="scrollToElement('perfil', '/perfil')" role="button"
+          <a class="nav-link d-flex justify-content-lg-center justify-content-start" aria-current="page" (click)="scrollToElement('perfil', '/perfil')" role="button"
             [ngClass]="{ 'active': isActive('/perfil') || isActive('/')}">Inicio</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" (click)="scrollToElement('lenguajes', '/lenguajes')" role="button"
-            [ngClass]="{ 'active': isActive('/lenguajes') }">Lenguajes</a>
+          <a class="nav-link d-flex justify-content-lg-center justify-content-start" (click)="scrollToElement('herramientas', '/herramientas')" role="button"
+            [ngClass]="{ 'active': isActive('/herramientas') }">Herramientas</a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" (click)="scrollToElement('proyectos', '/proyectos')" role="button"
+          <a class="nav-link d-flex justify-content-lg-center justify-content-start" (click)="scrollToElement('proyectos', '/proyectos')" role="button"
             [ngClass]="{ 'active': isActive('/proyectos') }">Proyectos</a>
         </li>
       </ul>
