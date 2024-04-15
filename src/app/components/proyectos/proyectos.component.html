@@ -1,46 +1,26 @@
-<div class="container-fluid bg-color" >
+<div class="container-fluid bg-color">
   <div class="row align-items-center">
     <div class="col-lg-4 order-lg-1 text-center text-lg-start">
       <h3>Proyectos desarrollados</h3>
     </div>
     <div class="col-lg-8 order-lg-2 text-light">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 justify-content-start">
+        @for (proyecto of proyectos; track $index) {
         <div class="col mb-3">
           <div class="card">
-            <img src="assets/img/cine.webp" class="card-img-top" alt="...">
+            <img src="{{proyecto.img}}" class="card-img-top" alt="...">
             <div class="card-img-overlay">
-              <h5 class="card-title">Cine</h5>
+              <h5 class="text-center card-title">{{proyecto.titulo}}</h5>
+              <p class="text-center">{{proyecto.descripcion}}</p>
             </div>
             <div class="card-footer">
-              <span class="badge rounded-pill bg-secondary">Angular</span>
+              @for (tecnologia of proyecto.tecnologias; track $index) {
+                <span class="badge rounded-pill bg-secondary">{{tecnologia}}</span>
+              }
             </div>
           </div>
         </div>
-        <div class="col mb-3">
-          <div class="card">
-            <img src="assets/img/programmer.svg" class="card-img-top" alt="...">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Proyecto</h5>
-            </div>
-            <div class="card-footer">
-              <span class="badge rounded-pill bg-secondary">HTML</span>
-              <span class="badge rounded-pill bg-secondary">Css</span>
-              <span class="badge rounded-pill bg-secondary">JavaScript</span>
-            </div>
-          </div>
-        </div>
-        <div class="col mb-3">
-          <div class="card">
-            <img src="assets/img/programmer.svg" class="card-img-top" alt="...">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Proyecto</h5>
-            </div>
-            <div class="card-footer">
-              <span class="badge rounded-pill bg-secondary">HTML</span>
-              <span class="badge rounded-pill bg-secondary">Css</span>
-            </div>
-          </div>
-        </div>
+        }
       </div>
     </div>
   </div>
