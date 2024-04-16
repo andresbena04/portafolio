@@ -10,7 +10,7 @@
                     @for (frontend of frontend; track $index) {
                     <li class="icon-content">
                         <a class="link" role="button">
-                            <img src="{{frontend.url}}" class="icon" alt="">
+                            <img src="{{frontend.url}}" class="icon" alt="{{frontend.nombre}} icon">
                         </a>
                         <div class="tooltip">{{frontend.nombre}}</div>
                     </li>
@@ -25,7 +25,7 @@
                     @for (backend of backend; track $index) {
                     <li class="icon-content">
                         <a class="link" role="button">
-                            <img src="{{backend.url}}" class="icon" alt="">
+                            <img src="{{backend.url}}" class="icon" alt="{{backend.nombre}} icon">
                         </a>
                         <div class="tooltip">{{backend.nombre}}</div>
                     </li>
@@ -40,7 +40,7 @@
                     @for (db of database; track $index) {
                     <li class="icon-content">
                         <a class="link" role="button">
-                            <img src="{{db.url}}" class="icon" alt="">
+                            <img src="{{db.url}}" class="icon" alt="{{db.nombre}} icon">
                         </a>
                         <div class="tooltip">{{db.nombre}}</div>
                     </li>
