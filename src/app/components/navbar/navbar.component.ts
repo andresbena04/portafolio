@@ -14,6 +14,11 @@ export class NavbarComponent {
   constructor(private router: Router) { }
 
   ngOnInit() { }
+  isNavbarCollapsed = true;
+
+  toggle() {
+    this.isNavbarCollapsed = !this.isNavbarCollapsed;
+  }
   scrollToElement(elementId: string, route: string): void {
     const element = document.getElementById(elementId);
     if (element) {
@@ -25,4 +30,5 @@ export class NavbarComponent {
   isActive(route: string): boolean {
     return this.router.url === route;
   }
+
 }
