@@ -1,9 +1,4 @@
-:root {
-  --primary-color: #91bbc1;
-  --secondary-color: #5682b1;
-  --neutro-color: #ded7c9;
-  --text-color: #2f3e44;
-}
+
 .text {
   font-family: "Amaranth", sans-serif;
   font-size: 400;
@@ -22,7 +17,7 @@
   bottom: 0;
   width: 0%;
   height: 3px;
-  background-color: #6a50ff;
+  background-color: #5682b1;
   transition: width 0.5s ease;
 }
 

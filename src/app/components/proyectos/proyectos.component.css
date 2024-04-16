@@ -1,14 +1,14 @@
-.bg-color {
+/* .bg-color {
   background-color: #5682b1 !important;
   color: #2f3e44;
+} */
+.title{
+  color: #2f3e44;
 }
-.font{
+.font {
   font-family: "Amaranth", sans-serif;
   font-weight: 400;
   font-style: italic;
-}
-.card{
-  cursor: pointer;
 }
 .card-img-top {
   height: 15rem;
@@ -17,52 +17,24 @@
   visibility: hidden;
 }
 .badge-outline {
-  border: 2px solid #5682B1; 
-  color: #2F3E44;
+  border: 2px solid #5682b1;
+  color: #2f3e44;
   background-color: transparent;
 }
 .card:hover {
-  -webkit-animation: shadow-pop-bl 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
   animation: shadow-pop-bl 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
 }
 
-@-webkit-keyframes shadow-pop-bl {
-  0% {
-    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
-      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
-      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-    -webkit-transform: translateX(0) translateY(0);
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    -webkit-box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e,
-      -4px 4px #3e3e3e, -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e,
-      -8px 8px #3e3e3e;
-    box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e,
-      -4px 4px #3e3e3e, -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e,
-      -8px 8px #3e3e3e;
-    -webkit-transform: translateX(8px) translateY(-8px);
-    transform: translateX(8px) translateY(-8px);
-  }
-}
 @keyframes shadow-pop-bl {
   0% {
-    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
-      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
     box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
       0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-    -webkit-transform: translateX(0) translateY(0);
     transform: translateX(0) translateY(0);
   }
   100% {
-    -webkit-box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e,
-      -4px 4px #3e3e3e, -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e,
-      -8px 8px #3e3e3e;
     box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e,
       -4px 4px #3e3e3e, -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e,
       -8px 8px #3e3e3e;
-    -webkit-transform: translateX(8px) translateY(-8px);
     transform: translateX(8px) translateY(-8px);
   }
 }
@@ -73,24 +45,9 @@
 
 .card:hover .card-img-overlay {
   visibility: visible;
-  -webkit-animation: tracking-in-contract 0.8s
-    cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
-@-webkit-keyframes tracking-in-contract {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
-}
 @keyframes tracking-in-contract {
   0% {
     letter-spacing: 1em;

@@ -1,18 +1,16 @@
-.bg-color {
-  background-color: #5682b1 !important;
-  color: #2f3e44;
+.img-fluid{
+  height: 35rem;
 }
-
-.font{
+.title {
   font-family: "Amaranth", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
-.info{
+.info {
   font-family: "Asap", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
+  text-align: justify;
 }

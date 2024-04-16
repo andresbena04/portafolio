@@ -7,7 +7,7 @@
 }
 
 .social-icons-container{
-    background-color: #91BBC1;
+    background-color: #5682b1;
 }
 
 .icons-container .icon-content {
@@ -40,7 +40,7 @@
     --tooltip-height: 35px;
     --tooltip-width: 90px;
     --gap-between-tooltip-to-button: 18px;
-    --button-color: #2F3E44;
+    --button-color: #5682b1;
     --tooltip-color: #fff;
     width: var(--width);
     height: var(--height);
@@ -90,7 +90,7 @@
   }
   
   .button:hover{
-    background: #DED7C9;
+    background: #678bb1;
   }
   
   .button:hover .text {

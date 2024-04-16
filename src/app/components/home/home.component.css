@@ -1,0 +1,12 @@
+.bg-color {
+  background-color: #2B3035 !important;
+}
+
+.font {
+  font-family: "Amaranth", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.img-fluid{
+    height: 30rem;
+}

@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-herramientas',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './herramientas.component.html',
   styleUrl: './herramientas.component.css'
 })

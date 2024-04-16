@@ -3,10 +3,10 @@
         <div class="col-md-12">
             <h3 class="font text-center">Herramientas de desarrollo</h3>
         </div>
-        <div class="col-md-6 col-sm-10 mt-4">
+        <div class="col-md-6 col-sm-10 mt-4 container-frontend">
             <h5 class="font text-center">Tecnologías Frontend</h5>
             <div>
-                <ul class="icons-container d-flex justify-content-evenly">
+                <ul class="icons-container rounded d-flex justify-content-around">
                     @for (frontend of frontend; track $index) {
                     <li class="icon-content">
                         <a class="link" role="button">
@@ -18,10 +18,10 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-6 col-sm-10 mt-4">
+        <div class="col-md-6 col-sm-10 mt-4 container-backend">
             <h5 class="font text-center">Tecnologías Backend</h5>
             <div>
-                <ul class="icons-container d-flex justify-content-evenly">
+                <ul class="icons-container rounded d-flex justify-content-around">
                     @for (backend of backend; track $index) {
                     <li class="icon-content">
                         <a class="link" role="button">
@@ -33,10 +33,10 @@
                 </ul>
             </div>
         </div>
-        <div class="col-12 col-sm-10 mt-4">
+        <div class="col-12 col-sm-10 mt-4 container-bd">
             <h5 class="font text-center">Base de datos</h5>
             <div>
-                <ul class="icons-container d-flex justify-content-evenly">
+                <ul class="icons-container rounded d-flex justify-content-evenly">
                     @for (db of database; track $index) {
                     <li class="icon-content">
                         <a class="link" role="button">
@@ -49,4 +49,5 @@
             </div>
         </div>
     </div>
+</div>
    
