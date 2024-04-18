@@ -37,7 +37,7 @@
 }
 
 .nav-link:hover::before {
-  transition-delay: 0.1s; /* Ajusta el retraso para que la animación comience desde el centro */
+  transition-delay: 0.1s; 
 }
 
 .active {

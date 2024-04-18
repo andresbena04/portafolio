@@ -16,22 +16,11 @@ export class ProyectosComponent {
     this.proyectos = [
       {
         titulo:"Cine App",
-        descripcion:"Cine cartelara proximamente combos",
-        img:"assets/img/desarrollo.webp",
-        tecnologias:["Angular", "HTML", "CSS"]
-      },
-      {
-        titulo: "Otro Proyecto",
-        descripcion: "Descripción de otro proyecto",
-        img: "assets/img/desarrollo.webp",
-        tecnologias: ["React", "JavaScript", "Bootstrap"]
-    },
-    {
-      titulo: "Otro Proyecto",
-      descripcion: "Descripción de otro proyecto",
-      img: "assets/img/desarrollo.webp",
-      tecnologias: ["Node js", "Express js", "MySQL"]
-  }
+        descripcion:"Diseño de una aplicacion web para un cine, con la vista de las peliculas que estan en cartera y la que estan proximas a estrenar",
+        img:"assets/img/cine-app.png",
+        tecnologias:["Angular", "Bootstrap"],
+        url:"https://andresbena04.github.io/cine-angular/"
+      }
     ]
   }
 }
