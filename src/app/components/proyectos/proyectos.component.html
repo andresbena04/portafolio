@@ -7,7 +7,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 justify-content-start">
         @for (proyecto of proyectos; track $index) {
         <div class="col mb-3">
-          <a role="button" href="{{proyecto.url}}" class="card">
+          <a role="button" href="{{proyecto.url}}" class="card" target="_blank">
             <img src="{{proyecto.img}}" class="card-img-top" alt="...">
             <div class="card-img-overlay">
               <h5 class="font text-center card-title">{{proyecto.titulo}}</h5>
@@ -16,7 +16,7 @@
             <div class="card-footer">
               @for (tecnologia of proyecto.tecnologias; track $index) {
                 <span class="font badge rounded-pill badge-outline me-1">{{tecnologia}}</span>
-              }
+              } 
             </div>
           </a>
         </div>

@@ -17,7 +17,7 @@ export class ProyectosComponent {
       {
         titulo:"Cine App",
         descripcion:"Diseño de una aplicacion web para un cine, con la vista de las peliculas que estan en cartera y la que estan proximas a estrenar",
-        img:"assets/img/cine-app.png",
+        img:"assets/img/Cine-app.png",
         tecnologias:["Angular", "Bootstrap"],
         url:"https://andresbena04.github.io/cine-angular/"
       }
