@@ -4,19 +4,28 @@
       <h3 class="title font text-center mb-4">Proyectos desarrollados</h3>
     </div>
     <div class="col-lg-8 order-lg-2">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 justify-content-start">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2  justify-content-start"
+        [ngClass]="{'row-cols-lg-1': MultipleProjects() === false, 'row-cols-lg-2': MultipleProjects() === true}">
         @for (proyecto of proyectos; track $index) {
-        <div class="col mb-3">
+        <div class="col mb-3 d-flex justify-content-center">
           <a role="button" href="{{proyecto.url}}" class="card" target="_blank">
-            <img src="{{proyecto.img}}" class="card-img-top" alt="...">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                @for (item of proyecto.img; track item; let first = $first) {
+                <div class="carousel-item {{ first ? 'active' : '' }}">
+                  <img src="{{item}}" class="card-img-top" alt="Imagen proyecto - {{proyecto.titulo}}">
+                </div>
+                }
+              </div>
+            </div>
             <div class="card-img-overlay">
               <h5 class="font text-center card-title">{{proyecto.titulo}}</h5>
               <p class="font text-center">{{proyecto.descripcion}}</p>
             </div>
             <div class="card-footer">
               @for (tecnologia of proyecto.tecnologias; track $index) {
-                <span class="font badge rounded-pill badge-outline me-1">{{tecnologia}}</span>
-              } 
+              <span class="font badge rounded-pill badge-outline me-1">{{tecnologia}}</span>
+              }
             </div>
           </a>
         </div>
